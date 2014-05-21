@@ -9,6 +9,9 @@ BookshelfAdapter.prototype.build = function(Model, props) {
 BookshelfAdapter.prototype.save = function(doc, Model, cb) {
   doc.save().nodeify(cb);
 };
+BookshelfAdapter.prototype.destroy = function(doc, Model, cb) {
+  doc.destroy().nodeify(cb);
+};
 
 var adapter = new BookshelfAdapter();
 
