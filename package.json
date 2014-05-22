@@ -1,6 +1,6 @@
 {
   "name": "factory-girl-bookshelf",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Bookshelf adapter for factory-girl",
   "main": "index.js",
   "scripts": {
