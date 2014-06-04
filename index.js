@@ -15,6 +15,7 @@ BookshelfAdapter.prototype.destroy = function(doc, Model, cb) {
 };
 
 var adapter = new BookshelfAdapter();
+module.exports.BookshelfAdapter = BookshelfAdapter;
 module.exports = function(models) {
   if (models) {
     for (var i = 0; i < models.length; i++) {
