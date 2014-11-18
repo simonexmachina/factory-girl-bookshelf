@@ -4,7 +4,7 @@
   "description": "A Bookshelf adapter for factory-girl",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,16 @@
   "bugs": {
     "url": "https://github.com/aexmachina/factory-girl-bookshelf/issues"
   },
-  "homepage": "https://github.com/aexmachina/factory-girl-bookshelf"
+  "homepage": "https://github.com/aexmachina/factory-girl-bookshelf",
+  "files": [
+    "index.js", "LICENSE.txt", "config/", "test/"
+  ],
+  "devDependencies": {
+    "bookshelf": "^0.7.9",
+    "config-node": "^1.2.2",
+    "factory-girl": "^1.0.2",
+    "knex": "^0.7.3",
+    "mocha": "^2.0.1",
+    "sqlite3": "^3.0.4"
+  }
 }

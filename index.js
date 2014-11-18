@@ -6,6 +6,12 @@ BookshelfAdapter.prototype = new Adapter();
 BookshelfAdapter.prototype.build = function(Model, props) {
   return new Model(props);
 };
+BookshelfAdapter.prototype.get = function(doc, attr, Model) {
+  return doc.get(attr);
+};
+BookshelfAdapter.prototype.set = function(props, doc, Model) {
+  return doc.set(props);
+};
 BookshelfAdapter.prototype.save = function(doc, Model, cb) {
   doc.save().nodeify(cb);
 };
@@ -15,7 +21,6 @@ BookshelfAdapter.prototype.destroy = function(doc, Model, cb) {
 };
 
 var adapter = new BookshelfAdapter();
-
 module.exports = function(models) {
   if (models) {
     for (var i = 0; i < models.length; i++) {
@@ -25,6 +30,7 @@ module.exports = function(models) {
   else {
     factory.setAdapter(adapter);
   }
+  return adapter;
 };
 
 module.exports.BookshelfAdapter = BookshelfAdapter;
