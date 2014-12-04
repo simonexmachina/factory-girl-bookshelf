@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/aexmachina/factory-girl-bookshelf.png)](https://travis-ci.org/aexmachina/factory-girl-bookshelf)
-
 # factory-girl-bookshelf
+
+[![Build Status](https://travis-ci.org/aexmachina/factory-girl-bookshelf.png)](https://travis-ci.org/aexmachina/factory-girl-bookshelf)
 
 A [Bookshelf](http://bookshelfjs.org/) adapter for [factory-girl](https://github.com/aexmachina/factory-girl).
 
