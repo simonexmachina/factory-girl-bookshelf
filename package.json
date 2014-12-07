@@ -29,7 +29,7 @@
     "index.js",
     "LICENSE.txt",
     "config/",
-    "test/"
+    "test/*.js"
   ],
   "peerDependencies": {
     "factory-girl": "*"
