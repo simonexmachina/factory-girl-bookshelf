@@ -2,7 +2,7 @@ module.exports = {
   database: {
     client: 'sqlite',
     connection: {
-      filename: 'test/tmp/test.db',
+      filename: ':memory:',
       database: 'factory-girl-bookshelf'
     }
   }
