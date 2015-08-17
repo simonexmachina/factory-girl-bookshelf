@@ -38,9 +38,9 @@
     "bookshelf": "^0.7.9",
     "chai": "^1.10.0",
     "config-node": "^1.2.2",
-    "factory-girl": "^1.1.2",
-    "knex": "^0.7.3",
-    "mocha": "^2.0.1",
-    "sqlite3": "^3.0.4"
+    "factory-girl": "^1.7.0",
+    "knex": "^0.8.6",
+    "mocha": "^2.2.5",
+    "sqlite3": "^3.0.10"
   }
 }
