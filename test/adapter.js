@@ -3,11 +3,11 @@ var Factory = require('factory-girl').Factory;
 var tests = require('factory-girl/lib/adapter-tests');
 var config = require('config-node')();
 var Bookshelf = require('bookshelf');
-var Model = Bookshelf.db.Model;
 
 describe('Bookshelf adapter', function() {
   init();
 
+  var Model = Bookshelf.db.Model;
   var TestModel = Model.extend({
     tableName: 'test'
   });
