@@ -13,7 +13,7 @@ BookshelfAdapter.prototype.set = function(props, doc, Model) {
   return doc.set(props);
 };
 BookshelfAdapter.prototype.save = function(doc, Model, cb) {
-  doc.save().nodeify(cb);
+  doc.save(null, { method: 'insert' }).nodeify(cb);
 };
 BookshelfAdapter.prototype.destroy = function(doc, Model, cb) {
   if (!doc.id) return process.nextTick(cb);
