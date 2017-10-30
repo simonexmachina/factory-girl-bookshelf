@@ -1,4 +1,4 @@
-**This package has been deprecated:** Sequelize support is now included in the factory-girl package
+**This package has been deprecated:** Bookshelf support is now included in the factory-girl package
 
 # factory-girl-bookshelf
 
